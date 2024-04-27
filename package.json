@@ -1,0 +1,352 @@
+{
+  "name": "sidebars",
+  "displayName": "Sidebars",
+  "publisher": "grg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grgar/vscode-sidebars"
+  },
+  "description": "The correct toggle for sidebars and panels",
+  "icon": "images/icon-small.png",
+  "version": "0.1.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "author": {
+    "name": "grg",
+    "url": "https://grg.app",
+    "email": "vscode@grg.app"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/grgar"
+  },
+  "homepage": "https://github.com/grgar/vscode-sidebars",
+  "qna": "https://github.com/grgar/vscode-sidebars/discussions",
+  "bugs": {
+    "email": "vscode@grg.app",
+    "url": "https://github.com/grgar/vscode-sidebars/issues"
+  },
+  "galleryBanner": {
+    "theme": "light",
+    "color": "#f6f8fa"
+  },
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.primary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.secondary",
+                false
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.panel",
+                false
+              ]
+            },
+            "workbench.action.closeSidebar"
+          ]
+        },
+        "when": "sideBarVisible && !auxiliaryBarVisible && !panelVisible"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.primary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.secondary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.panel",
+                false
+              ]
+            },
+            "workbench.action.closeSidebar",
+            "workbench.action.closeAuxiliaryBar"
+          ]
+        },
+        "when": "sideBarVisible && auxiliaryBarVisible && !panelVisible"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.primary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.secondary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.panel",
+                true
+              ]
+            },
+            "workbench.action.closePanel",
+            "workbench.action.closeSidebar",
+            "workbench.action.closeAuxiliaryBar"
+          ]
+        },
+        "when": "sideBarVisible && auxiliaryBarVisible && panelVisible"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.primary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.secondary",
+                false
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.panel",
+                true
+              ]
+            },
+            "workbench.action.closePanel",
+            "workbench.action.closeSidebar"
+          ]
+        },
+        "when": "sideBarVisible && !auxiliaryBarVisible && panelVisible"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.primary",
+                false
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.secondary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.panel",
+                true
+              ]
+            },
+            "workbench.action.closeAuxiliaryBar",
+            "workbench.action.closePanel"
+          ]
+        },
+        "when": "!sideBarVisible && auxiliaryBarVisible && panelVisible"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.primary",
+                false
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.secondary",
+                false
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.panel",
+                true
+              ]
+            },
+            "workbench.action.closePanel"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && panelVisible"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.primary",
+                false
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.secondary",
+                true
+              ]
+            },
+            {
+              "command": "_setContext",
+              "args": [
+                "grg.sidebars.panel",
+                false
+              ]
+            },
+            "workbench.action.closeAuxiliaryBar"
+          ]
+        },
+        "when": "!sideBarVisible && auxiliaryBarVisible && !panelVisible"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.toggleSidebarVisibility"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && grg.sidebars.primary && !grg.sidebars.secondary && !grg.sidebars.panel"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.toggleAuxiliaryBar"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && !grg.sidebars.primary && grg.sidebars.secondary && !grg.sidebars.panel"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.togglePanel"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && !grg.sidebars.primary && !grg.sidebars.secondary && grg.sidebars.panel"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.toggleSidebarVisibility",
+            "workbench.action.toggleAuxiliaryBar"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && grg.sidebars.primary && grg.sidebars.secondary && !grg.sidebars.panel"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.toggleAuxiliaryBar",
+            "workbench.action.togglePanel"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && !grg.sidebars.primary && grg.sidebars.secondary && grg.sidebars.panel"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.toggleSidebarVisibility",
+            "workbench.action.togglePanel"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && grg.sidebars.primary && !grg.sidebars.secondary && grg.sidebars.panel"
+      },
+      {
+        "key": "shift+ctrl+alt+0",
+        "mac": "shift+alt+cmd+0",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.toggleSidebarVisibility",
+            "workbench.action.toggleAuxiliaryBar",
+            "workbench.action.togglePanel"
+          ]
+        },
+        "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && grg.sidebars.primary && grg.sidebars.secondary && grg.sidebars.panel"
+      }
+    ]
+  }
+}
