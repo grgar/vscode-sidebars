@@ -2,9 +2,9 @@
 
 - **Toggle the visibility of sidebars and the bottom panel** at the same time using one keyboard shortcut:
 
-    ### <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>0</kbd>
+    ### Windows/Linux: <kbd>shift</kbd> + <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>0</kbd> &nbsp;*or*&nbsp; <kbd>shift</kbd> + <kbd>ctrl</kbd> + <kbd>F12</kbd>
     
-    ### <kbd>⌥ alt</kbd> + <kbd>⇧ shift</kbd> + <kbd>⌘ cmd</kbd> + <kbd>0</kbd> on macOS
+    ### macOS: <kbd>⌥ alt</kbd> + <kbd>⇧ shift</kbd> + <kbd>⌘ cmd</kbd> + <kbd>0</kbd> &nbsp;*or*&nbsp; <kbd>⇧ shift</kbd> + <kbd>⌘ cmd</kbd> + <kbd>F12</kbd>
 
 - **Correctly restores the hidden panels** when the same shortcut is pressed again.
 
