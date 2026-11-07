@@ -659,5 +659,8 @@
         "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && grg.sidebars.primary && grg.sidebars.secondary && grg.sidebars.panel"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.1.0"
   }
 }
