@@ -8,7 +8,7 @@
   },
   "description": "The correct toggle for sidebars and panels",
   "icon": "images/icon.png",
-  "version": "0.2.0",
+  "version": "0.0.0",
   "license": "MIT",
   "engines": {
     "vscode": "^1.74.0"
@@ -659,5 +659,8 @@
         "when": "!sideBarVisible && !auxiliaryBarVisible && !panelVisible && grg.sidebars.primary && grg.sidebars.secondary && grg.sidebars.panel"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.1.0"
   }
 }
